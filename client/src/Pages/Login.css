@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,200&display=swap");
+
+/* Base styling for the login section */
+.login {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url(../images/Todo_Login3.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Container for the login content */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
+  height: 100%;
+}
+
+/* Styling for the heading container */
+.login-heading-container div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 1rem 2rem;
+}
+
+/* Styling for the main login heading */
+.login-heading {
+  font-family:  sans-serif;
+  font-weight: 400;
+  margin: 4% auto 1% auto;
+  font-size: 4rem;
+  text-align: center;
+  color: rgb(218, 202, 202);
+  width: 80vw;
+  font-stretch: expanded;
+}
+
+/* Styling for the login form container */
+.login-form-container {
+  width: 80%; /* Adjusted width for larger screens */
+  max-width: 30rem; /* Added max-width for smaller screens */
+  height: 60vh;
+  margin: 6vh auto auto auto;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 0.5rem;
+}
+
+/* Styling for the login form heading */
+.login-form-container h3 {
+  font-size: 2.5rem;
+  padding: 1.5rem 0rem 0rem 0rem;
+  color: rgb(218, 202, 202);
+  text-align: center;
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+  height: 4rem;
+  font-family:  sans-serif;
+  border-radius: 0.5rem 0.5rem 0% 0%;
+  background-color: #eba04a57;
+}
+
+/* Styling for additional text in the login form */
+.login-form-container p {
+  margin: 1rem 0rem 0rem 0rem;
+  color: #999;
+  width: 100%; /* Adjusted width for responsiveness */
+  text-align: center;
+}
+
+/* Styling for the login form */
+.login-form-container form {
+  width: 100%; /* Adjusted width for responsiveness */
+  height: auto;
+  margin: 5rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Styling for the input fields */
+.input-field {
+  width: 100%; /* Adjusted width for responsiveness */
+  padding: 1rem 0;
+  margin: 1rem 0; /* Adjusted margin for responsiveness */
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  border-bottom: 1px solid #999;
+  outline: none;
+  font-size: 1.25rem;
+  color: white;
+  background: transparent;
+}
+
+/* Styling for additional labels */
+.show-pass-label {
+  font-size: 1rem;
+  color: #999;
+}
+
+/* Styling for the checkbox */
+.cpassword-checkbox {
+  font-size: 2rem;
+  margin: 0rem 1rem;
+}
+
+/* Styling for the login button */
+.login-button {
+  margin: 1rem auto 2rem auto;
+  padding: 0.75rem 0rem;
+  width: 100%; /* Adjusted width for responsiveness */
+  max-width: 10rem; /* Added max-width for smaller screens */
+  border: none;
+  font-size: 1.25rem;
+  font-stretch: expanded;
+  border-radius: 2%;
+}
+
+/* Media queries for responsiveness */
+/* Mobile devices */
+@media screen and (max-width: 599px) {
+  .login-form-container {
+    width: 90%;
+  }
+
+  .input-field {
+    width: 100%;
+  }
+
+  .login-button {
+    width: 80%;
+  }
+  .login-heading{
+    margin-top: 3rem;
+    font-size: 1.5rem;
+  }
+}
+
+/* Small screens (e.g., phones in landscape mode) */
+@media screen and (min-width: 600px) and (max-width: 767px) {
+  .login-form-container {
+    width: 70%;
+  }
+
+  .input-field {
+    width: 80%;
+  }
+
+  .login-button {
+    width: 70%;
+  }
+  .login-heading{
+    margin-top: 3rem;
+    font-size: 1.5rem;
+  }
+}
+
+/* Medium-sized screens (e.g., tablets) */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .login {
+    background-size: 100vw 110vh !important;
+  }
+
+  .login-form-container {
+    width: 50%;
+  }
+
+  .input-field {
+    width: 60%;
+  }
+
+  .login-button {
+    width: 60%;
+  }
+  .login-heading{
+    margin-top: 3rem;
+    font-size: 2.5rem;
+  }
+}
+
+/* Large screens (e.g., laptops and desktops) */
+@media screen and (min-width: 1024px) {
+  .login-form-container {
+    width: 40%;
+  }
+
+  .input-field {
+    width: 50%;
+  }
+
+  .login-button {
+    width: 50%;
+  }
+}

@@ -1,0 +1,98 @@
+.add-modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 0.2px solid white;
+  margin: 5vh auto 10vh auto;
+  width: 50vw;
+  height: 50vh;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.397);
+  position: relative;
+}
+.add-modal h3 {
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 2rem;
+  margin: 0.5rem auto 0.5rem auto;
+}
+.add-modal i {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.add-modal-container {
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  backdrop-filter: blur(2.5px);
+  display: flex;
+  justify-content: center;
+}
+.priority-radio {
+  margin: 0.5rem 0.5rem;
+}
+.input-field2 {
+  width: 80%;
+  padding: 1rem 0;
+  margin: 1rem 2rem;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  border-bottom: 1px solid #999;
+  outline: none;
+  font-size: 1rem;
+  color: white;
+  background: transparent;
+}
+
+
+.add-task-button {
+    margin: 4rem auto 1rem auto;
+    padding: 1.5rem 0.5rem;
+    width: 10rem;
+    height: 6rem;
+    border: none;
+    font-size: 1.25rem;
+    font-stretch: expanded;
+    border-radius: 2%;
+  }
+  
+
+  /* Media queries for responsiveness */
+
+/* For mobile devices */
+@media only screen and (max-width: 600px) {
+  .add-modal {
+    margin: -10vh 0vh !important;
+    width: 90vw;
+    height: 90vh;
+  }
+  /* Add other styles for mobile devices here */
+}
+
+/* For tablet devices */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .add-modal {
+    width: 70vw;
+    height: 80vh;
+  }
+  /* Add other styles for tablet devices here */
+}
+
+/* For laptop screens */
+@media only screen and (min-width: 1025px) {
+  .add-modal {
+    width: 50vw;
+    height: 80vh;
+  }
+  /* Add other styles for laptop screens here */
+}

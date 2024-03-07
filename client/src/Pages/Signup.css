@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,200&display=swap");
+
+.signup {
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover !important;
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url(../images/Todo_Signup.jpg);
+}
+
+.signup-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
+  height: 100%;
+}
+
+.signup-heading-container div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 1rem 2rem;
+}
+
+.signup-heading {
+  font-family: sans-serif;
+  margin: 4% auto 1% auto;
+  font-size: 4rem;
+  text-align: center;
+  color: rgb(218, 202, 202);
+  width: 80vw;
+  font-weight: 400;
+  font-stretch: expanded;
+}
+
+.signup-form-container {
+  width: 80vw;
+  height: 60vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin: 6vh auto auto auto;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 0.5rem;
+}
+
+.signup-form-container h3 {
+  font-size: 2.5rem;
+  padding: 1.5rem 0rem 0rem 0rem;
+  color: rgb(218, 202, 202);
+  text-align: center;
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+  height: 4rem;
+  font-family: sans-serif;
+  border-radius: 0.5rem 0.5rem 0% 0%;
+  background-color: #eba04a57;
+}
+
+.signup-form-container p {
+  margin: 1rem 0rem 0rem 0rem;
+  color: #999;
+  width: 68%;
+  text-align: center;
+}
+
+form {
+  width: 80vw;
+  height: 50vh;
+  margin: 5rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.input-field {
+  width: 80%;
+  padding: 1rem 0;
+  margin: 1rem 2rem;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  border-bottom: 1px solid #999;
+  outline: none;
+  font-size: 1.25rem;
+  color: white;
+  background: transparent;
+}
+
+.show-pass-label {
+  font-size: 1rem;
+  color: #999;
+}
+
+.cpassword-checkbox {
+  font-size: 2rem;
+  margin: 0rem 1rem;
+}
+
+.signup-button {
+  margin: 1rem auto 2rem auto;
+  padding: 0.75rem 0rem;
+  width: 10rem;
+  height: 4rem;
+  border: none;
+  font-size: 1.25rem;
+  font-stretch: expanded;
+  border-radius: 2%;
+}
+
+/* Media Queries for Responsiveness */
+/* For mobile devices */
+@media (max-width: 480px) {
+  .signup-heading {
+    margin-top: 3rem;
+    font-size: 1.5rem;
+    width: 90vw;
+  }
+
+  .signup-form-container {
+    width: 90vw;
+  }
+
+  form {
+    width: 85vw;
+  }
+
+  .input-field {
+    width: 80%;
+  }
+}
+
+/* For tablet devices */
+@media (min-width: 481px) and (max-width: 1024px) {
+  .signup-heading {
+    font-size: 3rem;
+    width: 90vw;
+  }
+
+  .signup-form-container {
+    width: 90vw;
+  }
+
+  form {
+    width: 90vw;
+  }
+
+  .input-field {
+    width: 90%;
+  }
+}
+
+/* For laptop devices */
+@media (min-width: 1025px) {
+  .signup-heading {
+    font-size: 4rem;
+    width: 80vw;
+  }
+
+  .signup-form-container {
+    width: 30vw;
+  }
+
+  form {
+    width: 25vw;
+  }
+
+  .input-field {
+    width: 80%;
+  }
+}

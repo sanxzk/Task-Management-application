@@ -1,0 +1,107 @@
+.task-container {
+  width: 60vw;
+  height: 10vh;
+  margin: 2rem 0rem;
+  border: 0.01rem solid white;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.task-title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 0.5rem 1rem 0 1rem;
+}
+
+.title-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 80%;
+}
+
+.task-due {
+  font-size: 1rem;
+  font-weight: 300;
+  margin: 0.5rem 1rem 0 1rem;
+}
+
+.task-title {
+  justify-self: flex-end;
+}
+
+.task-buttons{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-content: center;
+  margin-right: 10%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.task-icon{
+  margin: 0.2rem 0.5rem;
+  border: 0.01px solid white;
+  padding: 0.5rem;
+  border-radius: 5%;
+  font-size: 0.6rem;
+}
+
+.task-icon:hover{
+  color: black;
+  background-color: white;
+  transition: 200ms;
+  transform: scale(1.5);
+}
+
+/* Media queries for different devices */
+@media screen and (max-width: 600px) {
+  /* Mobile devices */
+  .task-container {
+    width: 80vw;
+    height: auto;
+    flex-direction: column;
+  }
+  .task-title {
+    font-size: 1rem;
+  }
+  .task-due {
+    font-size: 0.7rem;
+  }
+  .task-buttons{
+    margin: 0.5rem 0rem 0.5rem 0rem;
+  }
+  .task-icon{
+    width: 80%;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  /* Tablet devices */
+  .task-container {
+    width: 80vw;
+  }
+  .task-title {
+    font-size: 1.2rem;
+  }
+  .task-due {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  /* Laptop screens */
+  .task-container {
+    width: 60vw;
+  }
+  .task-title {
+    font-size: 1.5rem;
+  }
+  .task-due {
+    font-size: 1rem;
+  }
+}
