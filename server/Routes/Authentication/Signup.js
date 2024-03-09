@@ -1,5 +1,5 @@
-const json = require("jsonwebtoken");
-const bcrypt = require("bcryptjs");
+const json = require("jsonwebtoken"); // for auth token creation
+const bcrypt = require("bcryptjs"); // for hashing the password and storing the hashed pass in db
 const User = require("../../Models/User");
 const secretKey = process.env.SECRET_KEY;
 
