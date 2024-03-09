@@ -39,11 +39,22 @@
   width: 80vw;
   height: 60vh;
   overflow-y: auto;
-  overflow-x: hidden;
   margin: 6vh auto auto auto;
   background-color: rgba(0, 0, 0, 0.3);
   border-radius: 0.5rem;
 }
+
+/* Hide scrollbar for Firefox */
+.signup-form-container::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE and Edge */
+.signup-form-container {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
 
 .signup-form-container h3 {
   font-size: 2.5rem;
@@ -61,7 +72,7 @@
 .signup-form-container p {
   margin: 1rem 0rem 0rem 0rem;
   color: #999;
-  width: 68%;
+  width: 100%;
   text-align: center;
 }
 
@@ -100,15 +111,19 @@ form {
 
 .signup-button {
   margin: 1rem auto 2rem auto;
-  padding: 0.75rem 0rem;
-  width: 10rem;
-  height: 4rem;
+  padding: 1.25rem 1.5rem;
   border: none;
   font-size: 1.25rem;
   font-stretch: expanded;
-  border-radius: 2%;
+  border-radius: 5%;
 }
 
+.signup-button>div{
+  display: flex;
+  flex-direction: row;
+  gap: 10%;
+  align-items: center;
+}
 /* Media Queries for Responsiveness */
 /* For mobile devices */
 @media (max-width: 480px) {

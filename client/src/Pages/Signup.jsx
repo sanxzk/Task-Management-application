@@ -56,7 +56,7 @@ const Signup = () => {
       toast.error(errorMessage);
       dispatch(setErrorNull());
     }
-  }, [errorMessage, isError,dispatch]);
+  }, [errorMessage, isError, dispatch]);
   return (
     <div className="signup">
       <div className="signup-container">
@@ -144,12 +144,13 @@ const Signup = () => {
                   />
                 </div>
               ) : (
-                <span>
-                  Signup<i className="fa-solid fa-right-to-bracket"></i>
-                </span>
+                <div>
+                  <span> Signup</span>
+                  <i className="fa-solid fa-right-to-bracket"></i>
+                </div>
               )}
             </button>
-            <p>
+            <p className="already-have-account">
               Already have an account?{" "}
               <Link style={{ color: "#3636d5" }} to="/login">
                 {" "}
